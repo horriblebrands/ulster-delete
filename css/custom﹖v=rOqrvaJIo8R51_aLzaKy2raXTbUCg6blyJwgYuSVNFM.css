@@ -1,0 +1,9 @@
+/* Order Sample forms: the "Basket Data" field carries the basket JSON through the
+   form post. It has to be a Long answer field rather than a Hidden field, because
+   Hidden fields are stored as nvarchar(255) and a basket of 3+ swatches overflows
+   that and the submission is silently rejected. Hide it here instead.
+   Attribute selector rather than a class selector so it still matches regardless of
+   how Umbraco Forms concatenates the wrapper classes. */
+[class*="basket-data-field"] {
+    display: none;
+}

@@ -1,0 +1,162 @@
+<!--
+  Ulster Carpets — master site navigation partial.
+  Edit THIS file once; it is injected into every page by /js/site-nav.js.
+  All links are root-relative (/...) so they work from any page depth.
+-->
+<div class="snav" data-snav>
+
+  <!-- Utility strip (always dark) -->
+  <div class="snav__utility">
+    <div class="snav__inner">
+      <nav class="snav__util-links" aria-label="Corporate">
+        <a href="/news/">News</a>
+        <a href="/about/">About</a>
+        <a href="/careers/">Careers</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="snav__region">
+        <label class="snav__sr" for="snavRegion">Select region</label>
+        <select id="snavRegion" class="snav__region-select" aria-label="Select region">
+          <option value="uk" selected>UK</option>
+          <option value="us">USA</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main bar -->
+  <div class="snav__bar">
+    <div class="snav__inner">
+      <a class="snav__logo" href="/" aria-label="Ulster Carpets — home">
+        <img src="/img/layout/new-ulster-logo-black.svg" alt="Ulster Carpets" width="118" height="42">
+      </a>
+      <div class="snav__actions">
+        <button class="snav__icon snav__search-toggle" type="button" aria-label="Search" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+        </button>
+        <button class="snav__icon snav__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="snavOverlay">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="13" x2="21" y2="13"></line></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Search drop-down -->
+    <form class="snav__search" role="search" aria-label="Site search">
+      <div class="snav__inner">
+        <input class="snav__search-input" type="search" name="q" placeholder="Search ulstercarpets.com&hellip;" autocomplete="off">
+        <button class="snav__search-submit" type="submit" aria-label="Search">Search</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Full-screen overlay menu -->
+  <div class="snav__overlay" id="snavOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="snav__overlay-scroll">
+      <div class="snav__inner snav__overlay-inner">
+
+        <nav class="snav__menu" aria-label="Main menu">
+
+          <!-- HOSPITALITY -->
+          <div class="snav__group">
+            <div class="snav__group-head">
+              <a class="snav__group-title" href="/hospitality/">Hospitality</a>
+              <button class="snav__group-toggle" type="button" aria-expanded="false" aria-label="Toggle Hospitality submenu">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="snav__panel">
+              <div class="snav__cols">
+                <div class="snav__col">
+                  <p class="snav__col-label">Design</p>
+                  <a href="/hospitality/inspiration/designers-edit/">Designers&#x27; Edit</a>
+                  <a href="https://designportal.ulstercarpets.com/Account/LogOn">Design Portal</a>
+                  <a href="/hospitality/studio-sessions-design-blog/">Studio Sessions</a>
+                  <a href="/hospitality/design-journey/">The Design Journey</a>
+                  <a href="/hospitality/custom-carpets/colour/">Colour Creation</a>
+                </div>
+                <div class="snav__col">
+                  <p class="snav__col-label">Carpets</p>
+                  <a href="/hospitality/custom-carpets/">Custom Axminster</a>
+                  <a href="/hospitality/custom-carpets/rugs/">Custom Rugs</a>
+                  <a href="/hospitality/stocked/">Stocked Collections</a>
+                  <a href="/hospitality/underlay/">Underlay</a>
+                  <a href="/hospitality/behind-the-weave/">Behind the Weave</a>
+                </div>
+                <div class="snav__col">
+                  <p class="snav__col-label">Resources</p>
+                  <a href="/hospitality/brochures/">Brochures and Guides</a>
+                  <a href="/hospitality/resources/">FAQs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HOME -->
+          <div class="snav__group">
+            <div class="snav__group-head">
+              <a class="snav__group-title" href="/home/">Home</a>
+              <button class="snav__group-toggle" type="button" aria-expanded="false" aria-label="Toggle Home submenu">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="snav__panel">
+              <div class="snav__cols">
+                <div class="snav__col">
+                  <p class="snav__col-label">Choose</p>
+                  <a href="/home/choose-a-carpet/">Choose A Carpet</a>
+                  <a href="javascript:void(0)" onclick="try{roomvo.startStandaloneVisualizer()}catch(e){location.href='/home/choose-a-carpet/'}">Visualiser</a>
+                  <a href="/home/find-a-stockist/">Find A Stockist</a>
+                  <a href="/home/underlay/">Underlay</a>
+                </div>
+                <div class="snav__col">
+                  <p class="snav__col-label">Inspiration</p>
+                  <a href="/home/blog/">Home Edit</a>
+                  <a href="/home/trends-colours/">Trends &amp; Colours</a>
+                </div>
+                <div class="snav__col">
+                  <p class="snav__col-label">More</p>
+                  <a href="/home/sustainability/">Sustainability</a>
+                  <a href="/home/resources/">Resources</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flat items -->
+          <div class="snav__group snav__group--flat">
+            <div class="snav__group-head">
+              <a class="snav__group-title" href="/hospitality/projects/">Projects</a>
+            </div>
+          </div>
+          <div class="snav__group snav__group--flat">
+            <div class="snav__group-head">
+              <a class="snav__group-title" href="/hospitality/design-journey/">How We Work</a>
+            </div>
+          </div>
+          <div class="snav__group snav__group--flat">
+            <div class="snav__group-head">
+              <a class="snav__group-title" href="/hospitality/studio-sessions-design-blog/">Studio Sessions</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="snav__ctas">
+          <a class="snav__cta snav__cta--ghost" href="/home/order-samples/">
+            <span class="snav__cta-mark" aria-hidden="true">&#10048;</span> Order Free Samples
+          </a>
+          <a class="snav__cta snav__cta--gold" href="/contact/">Discuss Your Brief</a>
+        </div>
+
+        <nav class="snav__overlay-footer" aria-label="Corporate">
+          <a href="/news/">News</a>
+          <a href="/about/">About</a>
+          <a href="/careers/">Careers</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
+</div>

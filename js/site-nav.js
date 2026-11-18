@@ -69,6 +69,8 @@
       });
     });
 
+    /* Desktop mega-menus open on hover / focus-within (pure CSS); nothing to wire here. */
+
     /* ---- Search ---- */
     function toggleSearch() {
       var on = snav.classList.toggle("is-searching");
